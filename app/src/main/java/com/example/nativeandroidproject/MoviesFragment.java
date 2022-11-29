@@ -10,10 +10,16 @@ import android.view.ViewGroup;
 
 public class MoviesFragment extends Fragment {
 
+    View v;
+
+    public MoviesFragment() {
+
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_movies, container, false);
+        v = inflater.inflate(R.layout.fragment_movies, container, false);
+        return v;
     }
 }

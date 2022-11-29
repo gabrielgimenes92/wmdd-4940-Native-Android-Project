@@ -10,10 +10,16 @@ import android.view.ViewGroup;
 
 public class SeriesFragment extends Fragment {
 
+    View v;
+
+    public SeriesFragment() {
+
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_series, container, false);
+        v = inflater.inflate(R.layout.fragment_series, container, false);
+        return v;
     }
 }
